@@ -1,5 +1,8 @@
 Vue Autocomplete Component with Algolia Integration
 
+Deployed link:
+https://autocomplete-algolia.vercel.app/
+
 Project Overview -- 
 
 This project was developed with the primary objective of integrating Algolia's robust search capabilities into a Vue application. The focus was on creating an autocomplete component that provides users with real-time search suggestions as they type. By leveraging Algolia's Autocomplete library and combining it with Vue's reactivity and component-based architecture, I aimed to deliver a seamless and efficient user experience.
