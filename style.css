@@ -12,3 +12,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 1rem;
 }
+
+
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .favicon-link {
+        background: url('/favicon.png') no-repeat left center;
+        padding-left: 20px; /* Adjust based on favicon size */
+      }
