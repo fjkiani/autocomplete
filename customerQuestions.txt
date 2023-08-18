@@ -1,0 +1,147 @@
+Question 1: --------
+
+Hello,
+
+I'm new to search engines, and there are a lot of concepts I'm not educated on. To make my onboarding smoother, it'd help if you could provide me with some definitions of the following concepts:
+
+Records
+Indexing
+I'm also struggling with understanding what types of metrics would be useful to include in the "Custom Ranking."
+
+Cheers, George
+
+Response 1: --------
+
+Hi George,
+
+Thank you for reaching out to us with your questions about Algolia. I'm here to help! Let's dive into the concepts you mentioned:
+
+1. Records:
+In the context of search engines like Algolia, a record is the smallest unit of data that can be indexed. Think of it like a row in a database table. Each record contains information about a single item and is composed of a series of attributes. For instance, in an e-commerce application, a record might represent a single product with attributes like name, description, price, and category. You can learn more about records in our documentation.
+
+Algolia stores each record in an index as a JSON (JavaScript Object Notation) schemaless object. Once in an index, each attribute of a record can be used for displaying, searching, filtering, or ranking search results.
+
+You can learn more about records in our guide here: 
+https://www.algolia.com/doc/guides/sending-and-managing-data/prepare-your-data/
+
+2. Indexing:
+Indexing is the process of adding or updating records in a search engine to make them searchable. When you index data, the search engine processes it and structures it in a way that allows for fast and accurate searches. In Algolia, when you push a record to an index, it becomes immediately searchable. The speed and relevance of search results are highly dependent on how the data is indexed. 
+
+ An index is a location within Algolia where clients can import the data they wish to make searchable. Indexing is the process of adding, updating, deleting, or manipulating data within an index. 
+ 
+ Indexing can be done in three ways:
+  1) Algolia API Client (recommended method): Algolia provides API clients in several programming languages (like JavaScript, Python, Ruby, PHP, etc.). Using these clients, you can programmatically index your data. This method is recommended, especially for larger datasets or when you need to automate the indexing process.
+  2) Via the Algolia Dashboard: Algolia's web-based dashboard provides a user-friendly interface where you can manually upload JSON files to index your data. This method is suitable for smaller datasets or for initial testing.
+  3) Using a Third-Party Platform: Algolia offers integrations with several third-party platforms and CMSs (like WordPress, Magento, Shopify, etc.). These integrations often provide plugins or extensions that handle the indexing process for you, making it easier to integrate Algolia into your existing platform.
+
+Dive deeper into Indexing with our guide here: 
+
+https://www.algolia.com/doc/guides/sending-and-managing-data/send-and-update-your-data/
+https://www.algolia.com/doc/guides/indexing/indexing-overview/
+https://www.algolia.com/doc/guides/getting-started/the-implementation-process/#indexing-data
+
+3. Custom Ranking:
+Custom Ranking in Algolia allows you to influence the order of the search results based on attributes that are important to your use case. While Algolia's default ranking does a great job at returning relevant results, sometimes you might want to give more weight to certain metrics that are specific to your application. Here are some metrics you might consider:
+
+  -Popularity: Products that are more popular or have more sales.
+  -Recentness: Newer articles or posts.
+  -Ratings & Reviews: Higher rated products or services.
+  -Margin or Profitability: Products with higher margins.
+  -Stock Availability: Products that are in stock.
+  -User Engagement: Posts with more likes, shares, or comments.
+  -You can read more about custom ranking and how to implement it in our documentation.
+
+To learn more about how our custom ranking feature works, please visit the link below:
+  - https://www.algolia.com/doc/guides/ranking/custom-ranking/#custom-ranking-overview  
+
+Remember, the key to custom ranking is understanding your users and what's important to them. It's always a good idea to test different ranking strategies and iterate based on user feedback and search analytics.
+
+I hope this helps clarify things for you. If you have any more questions or need further assistance, please don't hesitate to ask. We're here to help!
+
+Warm regards,
+
+Fahad Kiani 
+Solutions Engineer
+Algolia Support Team
+
+
+Question 2: -------- 
+
+Hello,
+
+Sorry to give you the kind of feedback that I know you do not want to hear, but I really hate the new dashboard design. Clearing and deleting indexes are now several clicks away. I am needing to use these features while iterating, so this is inconvenient.
+
+Regards, Matt
+
+Response 2: --------
+
+Hello Matt,
+
+Thank you for reaching out and sharing your thoughts. We truly value feedback from our users as it drives our commitment to continuous improvement.
+
+I completely understand your concerns about the recent changes to the dashboard, especially regarding the accessibility of clearing and deleting indexes. While our aim was to enhance user experience and bring a more intuitive interface, we recognize that certain changes might not resonate well with all our users.
+
+To make your interactions more efficient, I'd like to provide some alternative solutions and links to documentations:
+
+API Client: Consider leveraging our API client if you haven't already. It offers a direct way to manage your data without the need to navigate through the dashboard. Quick Start with the API Client is a great resource to get started. 
+  -https://www.algolia.com/doc/tutorials/getting-started/quick-start-with-the-api-client/javascript/.
+
+Delete an Index: You can delete an index directly using our API client. 
+  -https://www.algolia.com/doc/api-reference/api-methods/delete-index/.
+
+Clear an Index: Use the index instance to clear all its records. 
+  -https://www.algolia.com/doc/api-reference/api-methods/clear-index/
+
+
+Your feedback is invaluable, and I'll ensure it's shared with our product team. We're always striving to improve, and user insights play a significant role in that.
+
+Thank you for your understanding and patience.
+
+Warm regards,
+
+Fahad Kiani 
+Solutions Engineer
+Algolia Support Team
+
+
+
+Question 3: -------- 
+
+Hi,
+
+I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high level process look like?
+
+Regards, Leo
+
+Response 3: --------
+
+Hi Leo,
+
+Thank you for reaching out! Integrating Algolia into your website is a streamlined process, and I'm here to guide you through it.
+
+Integration Options:
+
+  -Third-Party Extensions: If you're using platforms like Magento, Wordpress, Zendesk, Shopify, or Jekyll, our extensions can help you integrate Algolia in no time.
+   Documentation: https://www.algolia.com/doc/guides/getting-started/how-algolia-works/in-depth/ecosystem/#third-party-extensions
+
+
+  -Framework Integrations: For those who've built their websites using frameworks like Rails, Laravel, Django, or Symfony, we offer dedicated integrations.
+   Documentation: https://www.algolia.com/doc/guides/getting-started/how-algolia-works/in-depth/ecosystem/#framework-integrations
+
+
+  -API Client: If neither of the above options suits your setup, our API client offers a flexible way to integrate Algolia. We provide extensive documentation and tutorials to assist you.
+  API Client Setup Guide: https://www.algolia.com/doc/guides/getting-started/quick-start/tutorials/quick-start-with-the-api-client/javascript/?client=javascript
+
+Additionally, our JavaScript search UI libraries can elevate your search experience, making it faster and more user-friendly. You can read more about it here:
+https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/
+
+To give you a holistic view of how our platform functions, here's a high-level overview of Algolia Implementation Process:
+https://www.algolia.com/customer-onboarding/
+
+
+Should you have any more questions or need further assistance, please don't hesitate to ask. We're here to help!
+
+Warm regards,
+Fahad Kiani
+Solutions Engineer
+Algolia 
