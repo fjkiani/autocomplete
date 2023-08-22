@@ -16,7 +16,7 @@ Simplify User Search: Reduce the time and effort users spend searching for conte
 Seamless Integration: Ensure that the integration of Algolia into the Vue component is smooth, without any glitches or performance issues.
 
 Feedback for Algolia --
-Working with Algolia has been a rewarding experience. The documentation is comprehensive, making the integration process straightforward. However, a few more Vue-specific examples in the documentation would be beneficial for developers new to either Vue or 
-Algolia. 
+Working with Algolia has been a rewarding experience. The documentation is comprehensive, making the integration process straightforward. A few more Vue-specific examples in the documentation would be beneficial for developers new to either Vue or 
+Algolia but the sandbox environment offered excellent solutions. 
 
 In conclusion, Algolia's capabilities are impressive, and its integration has significantly enhanced the search capability for this project. 
